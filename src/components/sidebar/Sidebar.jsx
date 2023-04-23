@@ -17,7 +17,7 @@ export default function Sidebar() {
     <div className='sidebar'>
         <div className="sidebarItem">
           <span className="sidebarTitle">ABOUT ME</span>
-          <img src="https://media.istockphoto.com/id/1361421117/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%AB%E3%83%83%E3%83%97%E3%83%AB%E3%81%AF%E5%B1%B1%E3%81%AE%E5%B0%BE%E6%A0%B9%E3%82%92%E7%99%BB%E3%82%8B.jpg?s=612x612&w=0&k=20&c=Ee9aa3_uXk2wxKGZnUB15--JYF-BuXaEXzMSDezV1dc=" alt="" />
+          <img src="https://images.unsplash.com/photo-1682101517715-71c48dc0cbea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" />
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, earum eaque! Molestiae veniam ipsum dolor sit amet consectetur, adipisicing elit. Et, earum eaque! Molestiae veniam </p>
         </div>
         <div className="sidebarItem">
