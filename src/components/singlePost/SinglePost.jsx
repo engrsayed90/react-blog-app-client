@@ -8,7 +8,7 @@ import { Context } from "../../context/Context";
 
 export default function SinglePost() {
   const location = useLocation();
-  const path = location.pathname.split("https://react-api-vdto.onrender.com/")[2];
+  const path = location.pathname.split("/")[2];
   const [post, setPost] =useState({});
   const PF = "https://react-api-vdto.onrender.com/images/";
   const {user} = useContext(Context);
@@ -18,7 +18,7 @@ export default function SinglePost() {
 
   useEffect(()=>{
     const getPost = async () => {
-      const res = await axios.get("https://react-api-vdto.onrender.com/posts/" + path);
+      const res = await axios.get("/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc)
@@ -28,7 +28,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://react-api-vdto.onrender.com/posts/${post._id}`, {
+      await axios.delete(`/posts/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -37,7 +37,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put(`https://react-api-vdto.onrender.com/posts/${post._id}`, {
+      await axios.put(`/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
